@@ -292,3 +292,7 @@ footer {
 footer .footer__text{
   margin-top: 45px;
 }
+
+.form-select {
+  width: 100%;
+}
