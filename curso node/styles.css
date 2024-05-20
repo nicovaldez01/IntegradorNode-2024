@@ -258,7 +258,7 @@ header ul li {
 
 .Contacto{
   background: center / cover fixed;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),url("./img/Fondo.jpg");
+  background-image:linear-gradient(rgba(23, 51, 35, 0.4), rgba(44, 119, 74, 0.5)),url("./img/Fondo.jpg");
   padding: 70px;
 }
 
