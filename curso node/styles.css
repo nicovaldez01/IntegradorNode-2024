@@ -271,6 +271,13 @@ text-encima p {
   box-shadow: 0 0 15px 3px #fffd;
 }
 
+.form-select {
+  width: 100%;
+}
+#mensaje {
+  height: 150px; /* Ajusta la altura según sea necesario */
+}
+
 
 footer {
   background-color: #0b110cd7;
@@ -283,6 +290,3 @@ footer .footer__text{
   margin-top: 45px;
 }
 
-.form-select {
-  width: 100%;
-}
