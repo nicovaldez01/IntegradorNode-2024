@@ -300,32 +300,53 @@ header ul li {
 }
 
 /* Footer Section */
+
 footer {
-  background-color: #333;
-  padding: 30px 0;
-  color: #fff;
+  background-color:#2f4933d7;
+  border:#23703697 solid 1px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
 }
 
-footer h3 {
-  margin-bottom: 20px;
+.iconos {
+  font-size: 24px;
+  margin: 0 10px;
+  margin-top: 20px;
+}
+
+footer i {
+  margin: 0 10px;
 }
 
 footer a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+footer p {
+  margin: 3px 0;
+  padding: 0;
+  margin-inline-start: 11px;
+}
+
 footer a:hover {
-  text-decoration: underline;
+  color: #2c9145bb;
 }
-
-footer .footer__text {
-  margin-top: 20px;
-  text-align: center;
-}
-
-footer .fa-brands {
-  margin-right: 10px;
-}
-
-
