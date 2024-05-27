@@ -7,6 +7,7 @@ body {
 html{
   width: 100vw;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* barra de menu */
