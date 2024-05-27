@@ -145,89 +145,76 @@ header {
 
 
 /**********************************************************************************/
-.contenedor-tajeta{
+.row {
   display: flex;
-  width: 80%;
-  margin-inline-start: 10%;
-  margin-inline-end: 20%; 
+  justify-content: center;
   padding: 20px;
-  text-align: center; 
-
 }
-
-.Con-t{
+.contenedor-tarjeta {
   width: 100%;
-  padding: 50px;
-  
-}
-
-.col-tajeta{
-  height: 200px;
-  color: #333;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 20px 0 #0009;
-  text-decoration: none;
-  display: inline-table;
+  text-align: center;
+}
+.Con-t {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col-tarjeta {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
   margin: 10px;
-}
-
-
-
-.card{
   display: flex;
-  border-radius: 15px;
-  border: none;
-  background-color: #f9f9f9;
-
+  flex-direction: column;
+  align-items: center;
 }
-
-.card:hover{
-  cursor: pointer;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
-  transition: background 0.3s ease, transform 0.3s ease; 
-  color: #f0f0f0;
-  /* transform: scale(0.9) rotate(3.5deg); /* Rotacion hacia la derecha */
-  transform: translateY(-20px); /* Movimiento vertical*/
-}
-
-
-.card:hover::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+.card {
   width: 100%;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
-  border-radius: inherit;
-  box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.1); 
-  opacity: 0;
-  transition: opacity 0.5s ease; 
+}
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f0f0f0;
+  transform: translateY(-10px);
+  border:none;
+}
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-text {
+  flex-grow: 1;
 }
 
-.card:hover::after {
-  opacity: 1; 
-}
-
-
-.card-body .card-text{
-  font-size: 13px;
-  padding: 15px;
-}
-
-.btn-color{
-  height: 50px;
-  width: 180px;
-  margin-top: 10px;
+.col-tarjeta .btn-color {
   background-color: #105c21;
-  border-style: none;
-  transition: 0.4s background-color;
+  border: none;
+  transition: background-color 0.4s;
+  margin-top: 10px;
 }
-
-.btn-color:hover{
+.col-tarjeta .btn-color:hover {
   background-color: #1b9936;
 }
-
+@media (max-width: 992px) {
+  .col-tarjeta {
+      flex: 1 1 calc(100% - 20px);
+  }
+}
+@media (max-width: 768px) {
+  .col-tarjeta {
+      flex: 1 1 calc(80% - 20px);
+  }
+}
 /**********************************************************************************/
 /*Modal*/
 /* Estilos para el modal */
