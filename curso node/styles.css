@@ -128,7 +128,6 @@ header {
   }
 }
 
-/* Media Queries para mejorar la responsividad */
 @media (max-width: 768px) {
   .texto-encima h1 {
     font-size: 30px;
