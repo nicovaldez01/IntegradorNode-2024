@@ -4,6 +4,11 @@ body {
   padding: 0;
 }
 
+html{
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
 /* barra de menu */
 #navbar {
   position: fixed;
@@ -144,13 +149,13 @@ header {
 
 
 /**********************************************************************************/
-.row {
+.centrado{
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
 }
+
 .contenedor-tarjeta {
-  width: 100%;
   padding: 20px;
   text-align: center;
 }
@@ -160,7 +165,6 @@ header {
   justify-content: center;
 }
 .col-tarjeta {
-  flex: 1 1 calc(25% - 20px);
   box-sizing: border-box;
   margin: 10px;
   display: flex;
@@ -204,16 +208,8 @@ header {
 .col-tarjeta .btn-color:hover {
   background-color: #1b9936;
 }
-@media (max-width: 992px) {
-  .col-tarjeta {
-      flex: 1 1 calc(100% - 20px);
-  }
-}
-@media (max-width: 768px) {
-  .col-tarjeta {
-      flex: 1 1 calc(80% - 20px);
-  }
-}
+
+
 /**********************************************************************************/
 /*Modal*/
 /* Estilos para el modal */
